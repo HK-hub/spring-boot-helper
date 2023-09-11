@@ -70,9 +70,5 @@ public class BaseTypeTestBean {
     @DynamicValue(key = "NullValueStringObject")
     private String nullStringValue;
 
-    public BaseTypeTestBean() {
-
-    }
-
 
 }
