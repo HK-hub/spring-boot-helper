@@ -31,7 +31,7 @@ public class CollectionTypeTestBean {
     /**
      * TODO 存在[ 和 ] 的问题
      */
-    @DynamicValue(key = "CharList", defaultValue = "[z,x,c,v,b,n,m,;,',=,*]")
+    @DynamicValue(key = "CharList", defaultValue = "['z','x','c','v','b','n','m',';','-','=','*']")
     private List<Character> characterList;
 
     @DynamicValue(key = "DoubleList", defaultValue = "[12.14, 13.14, 520.13, 521.0, 1024.0]")

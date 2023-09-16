@@ -1,7 +1,5 @@
 package com.hk.helper.test;
 
-import com.fasterxml.jackson.databind.JavaType;
-import com.google.common.base.Function;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import org.junit.jupiter.api.Test;
@@ -33,6 +31,21 @@ public class TestConverter {
         Object object = gson.fromJson("{a,b,c,d,5,6}", type);
         System.out.println(object);
     }
+
+    @Test
+    public void testCharCollectionConverter() throws Exception {
+
+        Class<? super List<Character>> rawType = new TypeToken<List<Character>>() {
+
+        }.getRawType();
+
+        Object object = gson.fromJson("['a','b','c']", rawType);
+        System.out.println(object);
+    }
+
+
+
+
 
 
 }
