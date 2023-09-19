@@ -20,13 +20,12 @@ public class AnonymousTypeTestBean {
 
 
     @DynamicValue
-    private String[] testStirngArray[];
+    private String[] testStringArray;
 
     @DynamicValue
     private Integer testInt;
 
     @DynamicValue(defaultValue = "[1,23,4,6,7,8,9,0,4365]")
     private List<Long> longList;
-
 
 }
